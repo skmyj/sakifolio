@@ -1,0 +1,110 @@
+@charset "UTF-8";
+  *{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+  
+  a{
+    color:#3d2d18;
+  }
+  
+  p{
+    color:#3d2d18;
+    margin:0;
+  }
+
+  header{
+    padding: 20px;
+    background-color:#ffffff;
+    color:#3d2d18 ;
+  }
+    header h1{
+      margin-right: auto;
+    }
+    header ul{
+      margin-top: 20px;
+      display: flex;
+    }
+    header li{
+      width: auto;
+      margin-right: 20px;
+    }
+  
+    section{
+      padding: 40px;
+      margin-bottom: 40px;
+      background-color: #ffffff;
+      display: grid;
+    }
+    
+      section h1{
+        margin-bottom: 12px;
+        color:#3d2d18;
+      }
+      section p {
+        margin-bottom: 40px;
+      }
+    
+      section a{
+        color:#2b2b2b;
+      }
+    
+      .img-item {
+        opacity: 100;
+        width: 100%;
+      }
+      
+      .img-item img {
+        width: 100%;
+        height: 100%;
+      }
+      
+      .img-item p {
+        text-align: center;
+      }
+
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .photo {
+    width: 25%;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    vertical-align: bottom;
+  }
+
+  #loading {
+    transition: all 2s; /*ローディングにかかる時間*/
+    background-color: #FFF;
+    z-index: 999;
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .loading-text {
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .spin {
+    width: 64px;
+    height: auto;
+  }
+  
+  .loaded {
+    opacity: 0;
+    visibility: hidden;
+  }
